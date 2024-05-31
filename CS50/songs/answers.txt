@@ -1,0 +1,8 @@
+SELECT name FROM songs
+SELECT name FROM songs ORDER by tempo ASC
+SELECT name FROM songs ORDER by duration_ms DESC LIMIT 5
+SELECT name FROM songs WHERE danceability > 0.75 and energy > 0.75 and valence > 0.75
+SELECT AVG(energy) AS avg FROM songs
+SELECT name FROM songs WHERE artist_id IN (SELECT id FROM artists WHERE name ='Post Malone')
+SELECT AVG(energy) FROM songs WHERE artist_id IN (SELECT id FROM artists WHERE name = 'Drake')
+SELECT name FROM songs WHERE name LIKE '%feat.%'

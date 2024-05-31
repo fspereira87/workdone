@@ -1,0 +1,1 @@
+SELECT birth FrOM people WHERE name = 'Emma Stone'
